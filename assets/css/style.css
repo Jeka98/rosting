@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 
+html {
+  scroll-behavior: smooth;
+}
+
 .visuallyhidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
@@ -41,7 +45,6 @@
 
 .header {
   background: url("../img/Background.png") center center no-repeat;
-  height: 1042px;
   background-size: cover;
 }
 
@@ -158,12 +161,11 @@ h2 {
 }
 
 .request__block {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 35px;
   margin-right: 20px;
+  margin-left: 36%;
   right: 0;
 }
 
@@ -171,7 +173,6 @@ h2 {
   position: relative;
   max-width: 519px;
   height: 114px;
-  margin-top: 39px;
   left: 78px;
   font-family: "Russo One", sans-serif;
   font-size: 26px;
@@ -219,7 +220,7 @@ h2 {
 .request__form {
   position: relative;
   display: flex;
-  margin-top: 30px;
+  margin-top: 29px;
   padding: 25px 45px;
   right: 220px;
   max-width: 940px;
@@ -267,6 +268,167 @@ h2 {
   font-size: 26px;
   font-family: "Russo One", sans-serif;
 }
+
+.arrow__down {
+  position: relative;
+  margin-top: 120px;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+}
+
+.arrow__down > a {
+  text-decoration: none;
+}
+
+.arrow__down--text {
+  position: relative;
+  top: -61px;
+  margin-bottom: -20px;
+  font-family: "Russo One", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.about-company__block {
+  margin-top: 120px;
+}
+
+.about-company__line::before {
+  position: absolute;
+  content: "";
+  border-width: 40px 0px 0px 100px;
+  left: -50px;
+  bottom: -109px;
+  border-color: transparent;
+  border-style: solid;
+  border-top-color: #af1414;
+}
+
+.about-company__line {
+  position: relative;
+  margin: 0 auto;
+  border-bottom: 70px solid #e83a28;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  max-width: 509px;
+  text-align: center;
+}
+
+.about-company__line::after {
+  position: absolute;
+  content: "";
+  border-width: 40px 100px 0px 0px;
+  right: -49px;
+  bottom: -109px;
+  border-color: transparent;
+  border-style: solid;
+  border-top-color: #af1414;
+}
+
+
+.about-company__line--text {
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-size: 30px;
+  line-height: 2.5;
+}
+
+.about-company__block {
+  background: url("../img/AboutUsBackground.png") center center no-repeat;
+  background-size: cover;
+}
+
+.about-company__content {
+  margin-top: 71px;
+
+}
+
+.about-company__content--img {
+  position: relative;
+  margin-left: 30px;
+  z-index: 3;
+}
+
+.about-company__content {
+  position: relative;
+  display: flex;
+}
+
+
+.about-company__content--list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px;
+  height: 600px;
+  background-color: #1eaa4f;
+  list-style: none;
+  -webkit-clip-path: polygon(21% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(21% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+.about-company__content--item {
+  display: flex;
+  margin-left: 185px;
+  margin-top: 60px;
+  margin-right: 17px;
+}
+
+.about-company__content--item > img {
+  width: 48px;
+  height: 48px;
+}
+
+.about-company__content--list li p {
+  margin-left: 30px;
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.about-company__content--list li:nth-child(1) p {
+  width: 356px;
+}
+
+.about-company__content--list li:nth-child(2) p {
+  width: 375px;
+}
+
+.about-company__content--list li:nth-child(3) p {
+  width: 563px;
+}
+
+.about-company__content--list li:nth-child(4) p {
+  width: 555px;
+}
+
+.text-skew {
+  position: relative;
+  color: #000000;
+  z-index: 1;
+}
+
+.text-skew::before {
+  content: '';
+  position: absolute;
+  width: 112px;
+  margin-left: -11px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffe400;
+  transform: skew(-30deg);
+  z-index: -1;
+}
+
 
 @media screen and (max-width: 600px) {
   .request__block--text {
@@ -341,6 +503,10 @@ h2 {
   
   .request__form {
     flex-direction: column;
+  }
+
+  .about-company__content--list li p {
+    max-width: 320px;
   }
 }
 
@@ -423,6 +589,7 @@ h2 {
     left: -144px;
     min-width: 521px;
   }
+
 }
 
 
@@ -435,10 +602,40 @@ h2 {
   .menu__navigation {
     margin: 0;
   }
+
+
 }
 
 @media screen and (max-width: 1200px) {
   .request__block {
-    left: 395px;
+    margin-left: 51%;
   }
+
+  
+  .about-company__content--img {
+    display: none;
+  }
+
+  .about-company__content--list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    left: 0;
+    margin-left: 0;
+    height: 100%;
+    min-width: 90%;
+    background-color: #1eaa4f;
+    list-style: none;
+    clip-path: none;
+  }
+
+  .about-company__content--item {
+    margin-left: 0;
+  }
+
+  .about-company__content--list li p {
+    max-width: 440px;
+  }
+
 }
