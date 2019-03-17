@@ -174,13 +174,13 @@ h2 {
 
 .request__block--text {
   position: relative;
+  padding-top: 50px;
   max-width: 519px;
   height: 114px;
   left: 78px;
   font-family: "Russo One", sans-serif;
   font-size: 26px;
   background-color: #e83a28;
-  padding-top: 50px;
   border-left: 20px solid transparent;
   -webkit-clip-path: polygon(90% 41%, 86% 22%, 100% 42%, 100% 100%, 0 100%, 8% 41%, 63% 41%);
   clip-path: polygon(90% 41%, 86% 22%, 100% 42%, 100% 100%, 0 100%, 8% 41%, 63% 41%);
@@ -274,11 +274,11 @@ h2 {
 
 .arrow__down {
   position: relative;
+  display: -webkit-box;
   margin-top: 120px;
   text-align: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  display: -webkit-box;
 }
 
 .arrow__down > a {
@@ -385,7 +385,7 @@ h2 {
 }
 
 .about-company__content--item > img {
-  width: 48px;
+  min-width: 48px;
   height: 48px;
 }
 
@@ -889,6 +889,7 @@ ul.countries__list li:first-child > a {
 
   .about-company__content--list li p {
     max-width: 320px;
+    font-family: sans-serif;
   }
 
   .buy-now__block {
@@ -932,7 +933,6 @@ ul.countries__list li:first-child > a {
   .header__content--brand_text {
     width: 60%;
   }
- 
 }
 
 @media screen and (min-width: 992px) {
@@ -954,7 +954,6 @@ ul.countries__list li:first-child > a {
 
 
 @media screen and (max-width: 1100px) {
-  
   .request__form {
     flex-direction: column;
     left: -154px;
@@ -983,7 +982,6 @@ ul.countries__list li:first-child > a {
     left: -144px;
     min-width: 521px;
   }
-
 }
 
 
@@ -996,8 +994,6 @@ ul.countries__list li:first-child > a {
   .menu__navigation {
     margin: 0;
   }
-
-
 }
 
 @media screen and (max-width: 1200px) {
