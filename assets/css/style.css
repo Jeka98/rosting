@@ -621,6 +621,12 @@ ul.countries__list li:first-child > a {
   text-decoration: none;
 }
 
+.products__link > img {
+  max-width: 390px;
+  width: 100%;
+  height: 291px; 
+}
+
 .products__list .products__item:nth-child(1) .products__link > span {
   position: absolute;
   left: 210px;
@@ -713,7 +719,7 @@ ul.countries__list li:first-child > a {
   }
 
   .show-btn__link {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
@@ -728,7 +734,7 @@ ul.countries__list li:first-child > a {
  }
 
   .header__content--brand_text {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -740,7 +746,8 @@ ul.countries__list li:first-child > a {
 
   .hide-menu-btn{
     position: absolute;
-    right: 125px;
+    right: 86px;
+    top: -6px;
     margin-right: -35px;
   }
 
@@ -824,6 +831,7 @@ ul.countries__list li:first-child > a {
 
   .products__item {
     margin-top: 20px;
+    margin-left: 9px;
   }
 }
 
