@@ -421,7 +421,7 @@ h2 {
 .text-skew::before {
   content: '';
   position: absolute;
-  width: 112px;
+  width: 118px;
   margin-left: -11px;
   top: 0;
   right: 0;
@@ -769,6 +769,14 @@ ul.countries__list li:first-child > a {
   input[type="submit"]
   {
       font-size:18px;
+  }
+
+  .row__content--item {
+    margin-bottom: 7px;
+  }
+
+  .item-number {
+    font-size: 25px !important;
   }
 
   .buy-now__line--text {
