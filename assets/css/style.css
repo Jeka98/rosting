@@ -552,14 +552,12 @@ h2 {
 
 .countries__item {
   max-width: fit-content;
-  width: 100%;
   margin-left: 8px;
   margin-top: 20px;
 } 
 
 .countries__item:first-child {
   max-width: fit-content;
-  width: 100%;
   padding-right: 20px;
   margin-left: 0;
 } 
