@@ -380,6 +380,7 @@ h2 {
   display: flex;
   margin-left: 185px;
   margin-top: 60px;
+  padding-left: 10px;
   margin-right: 17px;
 }
 
@@ -707,8 +708,68 @@ ul.countries__list li:first-child > a {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 360px) {
+  .products__list .products__item:nth-child(1) .products__link > span {
+    left: 170px;
+  }
+  .products__list .products__item:nth-child(2) .products__link > span {
+    left: 170px;
+  }
+  
+  .products__list .products__item:nth-child(3) .products__link > span {
+    left: 170px;
+  }
 
+
+}
+
+@media screen and (max-width: 600px) {
+  .request__block {
+    margin-left: 20px !important;
+  }
+  
+  .request__block--text {
+    position: static;
+    border: none;
+    padding-top: 0;
+    margin: 20px auto !important;
+    clip-path: none;
+    min-width: 100% !important;
+    max-width: 521px !important;
+    height: auto;
+  } 
+  .request__block--text::after {
+    display: none;
+  }
+
+  .request__form {
+    position: static;
+    width: 100% !important;
+    transform: skew(0deg);
+    padding: 10px;
+    margin-top: 0;
+  }
+
+  .request__form::before {
+    display: none;
+  }
+  .request__form::after {
+    display: none;
+  }
+
+  .request__form-element {
+    transform: skew(0deg);
+    margin: 20px 0 !important;
+    min-width: 90%;
+  }
+
+  .request__form-element:nth-child(3) {
+    width: 100% !important;
+  }
+  input[type="submit"]
+  {
+      font-size:18px;
+  }
 
   .buy-now__line--text {
     font-size: 19px;
@@ -719,7 +780,7 @@ ul.countries__list li:first-child > a {
   }
 
   .show-btn__link {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
@@ -784,7 +845,7 @@ ul.countries__list li:first-child > a {
 
   h2 {
     width: 90%;
-    font-size: 33px;
+    font-size: 30px;
   }
 
   .header__content--brand {
@@ -811,7 +872,7 @@ ul.countries__list li:first-child > a {
   }
 
   .request__block--text {
-    left: -187px !important;
+    left: -143px !important;
   }
   
   .request__form {
@@ -947,8 +1008,10 @@ ul.countries__list li:first-child > a {
     right: 0;
     left: 0;
     margin-left: 0;
+    margin: 15px auto;
+    padding-left: 0;
     height: 100%;
-    min-width: 90%;
+    max-width: 100%;
     background-color: #1eaa4f;
     list-style: none;
     clip-path: none;
